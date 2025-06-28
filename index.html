@@ -5,6 +5,9 @@
     <title> Personal Portfolio </title>
     <link href="style.css" rel="stylesheet">
 
+    <!-- Font Copyright 2021 The Martian Mono Project Authors (https://github.com/evilmartians/mono)
+    This Font Software is licensed under the SIL Open Font License, Version 1.1:
+    https://fonts.google.com/specimen/Martian+Mono/license -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
@@ -86,12 +89,41 @@
 
         <div id="project-section" style="background-color:rgb(167, 159, 201); height: 90vh;">
             <h1 class="main-text" style="padding-top:30px; margin-left:40px; font-size:425%;"> PROJECTS </h1>
-            <div>
-                <div id="example-project-1">
-                    <div style="background-color:white; width: 500px; height: 500px; border-radius: 10%;"> 
-                    </div>
-                    <p style="padding: 30px;"> Example Project </p>
+            <div style="display:flex; justify-content: center;">
+
+                <div style="display: flex; align-self: center;" onclick="projectArrowBack()">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" viewBox="0 0 24 24" transform="scale(-1,1) " style="padding-bottom: 100px;">
+                        <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                        <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
+                    </svg> 
                 </div>
+
+                <div id="project-main" style="display:flex; width: 90vw; margin-bottom: 10px;"> 
+
+                    <img src='example-project-filler.png' style="height: 60vh;">
+
+                    <div style="width: 50%; margin-left: 30px; margin-right: 30px;">
+
+                        <div style="background-color: white; padding: 10px; padding-top: 0px;"> 
+                            <p class="project-title"> EXAMPLE PROJECT </p>
+                            <p class="project-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div style="display: flex; align-self: center;" onclick="projectArrowForward()"> 
+                    <svg width="200" height="200" fill="currentColor" viewBox="0 0 24 24" id="injected-svg" style="padding-bottom: 100px;">
+                        <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                        <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
+                    </svg>
+                </div>
+
             </div>
         </div>
 

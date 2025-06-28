@@ -93,6 +93,7 @@ main{
     margin-right: 175px;
     font-size: 125%;
     height: 55vh;
+    overflow: scroll;
 }
 
 .menu-icon {
@@ -124,7 +125,18 @@ main{
     font-size: 130%;
 }
 
-#example-project-1 {
-    display: flex;
-    justify-content: center;
+.project-title {
+    padding: 10px; 
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.project-desc {
+    text-align: justify;
+    max-height: 38vh;
+    overflow: scroll;
+}
+
+#project-main {
+    transition: .5s;
 }
