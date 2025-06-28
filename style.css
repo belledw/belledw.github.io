@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Martian Mono", monospace;
+}
+
+.main-text {
+    font-size: 550%;
+    font-weight: normal;
+    margin-left: 120px;
+}
+
+#opening-page {
+    background-color: white;
+    height: 80vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#title-bg {
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 12.5px;
+    padding-left: 5px;
+    background-color:rgb(167, 159, 201);
+    width: 450px;
+}
+
+main{
+    padding: 10px;
+    padding-top: 0px;
+}
+
+#about-link {
+    font-size: 175%;
+    margin-right: 15px;
+}
+
+#student-desc {
+    margin-left: 120px;
+    margin-right: 17.5%;
+    min-width: 365px;
+    background-color: rgb(167, 159, 201);
+    padding-left: 8px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    font-size: 150%;
+}
+
+#social-links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 30px;
+    font-size: 120%;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#about-me {
+    font-size: 350%; 
+    padding: 10px; 
+    background-color: rgb(167, 159, 201);
+    margin-right: 67%;
+    min-width: 325px;
+}
+
+#p-about {
+    padding: 10px;
+    background-color: rgb(194, 190, 216);
+    margin-left: 150px;
+    margin-right: 175px;
+    font-size: 125%;
+    height: 55vh;
+}
+
+.menu-icon {
+    padding-left: 10px;
+    color:black
+}
+
+/* From W3Schools */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: rgb(194, 190, 216);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#body {
+    transition: margin-right .5s;
+}
+
+.side-list-item {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 130%;
+}
+
+#example-project-1 {
+    display: flex;
+    justify-content: center;
+}
