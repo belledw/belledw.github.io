@@ -90,8 +90,7 @@ main{
     padding: 10px;
     background-color: rgb(194, 190, 216);
     margin-left: 150px;
-    margin-right: 175px;
-    font-size: 125%;
+    font-size: 120%;
     height: 55vh;
     overflow: scroll;
 }
@@ -139,4 +138,14 @@ main{
 
 #project-main {
     transition: .5s;
+}
+
+#standing-profile {
+    display: flex;
+    justify-self: flex-start;
+    padding: 10px;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-bottom: 0px;
+    margin-right: 65px;
 }
