@@ -6,22 +6,34 @@ fetch("https://meowfacts.herokuapp.com/")
         catPara.innerHTML = data.data;
     })
 
-function openNav() {
-    document.getElementById("sidenav").style.width = "250px";
-    document.getElementById("body").style.marginRight = "250px";
-}
-
-function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-    document.getElementById("body").style.marginRight = "0";
-}
-
 function openCloseNav() {
     if (document.getElementById("sidenav").style.width == "250px") {
-        closeNav()
+        document.getElementById("sidenav").style.width = "0";
+        document.getElementById("body").style.marginRight = "0";
     } else {
-        openNav()
+        document.getElementById("sidenav").style.width = "250px";
+        document.getElementById("body").style.marginRight = "250px";
     }
+}
+
+// Reference https://www.w3schools.com/howto/howto_js_slideshow.asp 
+let slideIndex = 1;
+function slideshow(n) {
+    let i;
+    let slides = document.getElementsByClassName("project-main");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "flex";
+}
+function changeSlide(n) {
+    slideshow(slideIndex += n);
 }
 
 /* Cat fact API

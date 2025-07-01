@@ -136,8 +136,10 @@ main{
     overflow: scroll;
 }
 
-#project-main {
-    transition: .5s;
+.project-main {
+    display: none;
+    width: 90vw; 
+    margin-bottom: 10px;
 }
 
 #standing-profile {
@@ -148,4 +150,15 @@ main{
     padding-left: 40px;
     padding-bottom: 0px;
     margin-right: 65px;
+}
+
+/* From W3Schools */
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0.1}
+    to {opacity: 1}
 }
