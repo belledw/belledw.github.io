@@ -29,10 +29,23 @@ function slideshow(n) {
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        slides[i].id = "off-display";
     }
+    slides[slideIndex-1].id = "on-display";
     slides[slideIndex-1].style.display = "flex";
+    for (i = 0; i != slideIndex-1 && i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].id = "off-display";
+    }
 }
-function changeSlide(n) {
+
+// Reference https://www.webapis.info/examples/web-animations/animate-remove
+async function changeSlide(n) {
+    let display = document.getElementById("on-display");
+    await display.animate([
+        {opacity: 1},
+        {opacity: 0}
+    ], {duration: 150}).finished;
     slideshow(slideIndex += n);
 }
 

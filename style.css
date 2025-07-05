@@ -167,7 +167,7 @@ main{
     animation-duration: 0.75s;
 }
 
-@keyframes fade-in {
+@keyframes fade-out {
   from {opacity: 1}
   to {opacity: 0}
 }
