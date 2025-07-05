@@ -7,12 +7,12 @@ fetch("https://meowfacts.herokuapp.com/")
     })
 
 function openCloseNav() {
-    if (document.getElementById("sidenav").style.width == "250px") {
+    if (document.getElementById("sidenav").style.width == "225px") {
         document.getElementById("sidenav").style.width = "0";
         document.getElementById("body").style.marginRight = "0";
     } else {
-        document.getElementById("sidenav").style.width = "250px";
-        document.getElementById("body").style.marginRight = "250px";
+        document.getElementById("sidenav").style.width = "225px";
+        document.getElementById("body").style.marginRight = "225px";
     }
 }
 
