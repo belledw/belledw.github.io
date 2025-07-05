@@ -49,6 +49,21 @@ async function changeSlide(n) {
     slideshow(slideIndex += n);
 }
 
+// Typing effect reference https://www.w3schools.com/howto/howto_js_typewriter.asp
+var i = 0;
+var txt = 'computer science + cybersecurity student'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("student-desc").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter()
+
 /* Cat fact API
 
 MIT License
