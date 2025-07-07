@@ -16,14 +16,14 @@
     <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
 </head>
 
-<body id="body">
+<body id="body" class="scroll-snap">
     <img id="background-image" src="freepik-orange-background.jpg">
 
     <nav> 
         <i class='bx  bx-menu bx-md' class="menu-icon" onclick="openCloseNav()"> </i> 
     </nav>
 
-    <div id="sidenav" class="sidenav"> 
+    <div id="sidenav" class="sidenav snap-always"> 
         <ul id="side-list-fill">
             <li class="side-list-item"> <a class="link" href="aboutme.html"> about me </a> </li>
             <li class="side-list-item"> <a class="link" href="index.html#project-section"> projects </a> </li>
@@ -44,24 +44,27 @@
         </div>
 
         <div id="background-credit"> background design by <a href="https://freepik.com" style="color:rgba(255, 255, 255, 0.75)"> freepik </a></div>
+
     </main>
 
-    <main>
-
-        <div style="position:sticky; top:0; padding-top: 25px; padding-bottom: 30px; width: 75%;"> 
+    <footer> 
+        <div style="position:sticky; top:0; padding-top: 25px; padding-bottom: 30px; width: 75%; margin-left: 10px;"> 
             <div style="width:50%"> 
                 <div id="social-links">
                     <div style="width:35%; min-width:120px;">
-                        <a class="link" href="#"> linkedin </a>
+                        <a class="link" href="#" style="color: rgba(255, 255, 255, 0.8)" title="not available yet"> linkedin </a>
                     </div>
                     <div style="width:35%">
-                        <a class="link" href="https://github.com/belledw"> github </a>
+                        <a class="link" href="https://github.com/belledw" style="color: rgba(255, 255, 255, 0.8)"> github </a>
                     </div>
                 </div>
             </div>
         </div>
+    </footer>
 
-        <div id="project-section" style="background-color:rgba(229, 154, 102, 1); height: 90vh;">
+    <main>
+
+        <div id="project-section" class="snap-always" style="background-color:rgba(229, 154, 102, 1); height: 90vh;">
             <h1 class="main-text" style="padding-top:30px; margin-left:40px; font-size:425%;"> PROJECTS </h1>
             <div style="display:flex; justify-content: center;">
 
@@ -76,7 +79,7 @@
 
                     <div style="background-color: white; width: 45vw; height: 60vh; border-radius: 5%;"> </div>
 
-                    <div style="width: 50%; margin-left: 30px; margin-right: 30px;">
+                    <div style="width: 40%; margin-left: 30px; margin-right: 30px;">
 
                         <div style="background-color: white; padding: 15px; padding-top: 1px; border-radius: 5%;"> 
                             <p class="project-title"> (1) EXAMPLE PROJECT </p>
@@ -95,7 +98,7 @@
 
                     <div style="background-color: white; width: 45vw; height: 60vh; border-radius: 5%;"> </div>
 
-                    <div style="width: 50%; margin-left: 30px; margin-right: 30px;">
+                    <div style="width: 40%; margin-left: 30px; margin-right: 30px;">
 
                         <div style="background-color: white; padding: 15px; padding-top: 1px; border-radius: 5%;"> 
                             <p class="project-title"> (2) EXAMPLE PROJECT </p>
@@ -112,7 +115,7 @@
 
                     <div style="background-color: white; width: 45vw; height: 60vh; border-radius: 5%;"> </div>
 
-                    <div style="width: 50%; margin-left: 30px; margin-right: 30px;">
+                    <div style="width: 40%; margin-left: 30px; margin-right: 30px;">
 
                         <div style="background-color: white; padding: 15px; padding-top: 1px; border-radius: 5%;"> 
                             <p class="project-title"> (3) EXAMPLE PROJECT </p>
