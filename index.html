@@ -2,8 +2,10 @@
 
 <html>
 <head>
-    <title> belledw | Personal Portfolio </title>
+    <title> belledw (Work in Progress!) </title>
     <link href="style.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="folder-code.png">
 
     <!-- Font Copyright 2021 The Martian Mono Project Authors (https://github.com/evilmartians/mono)
     This Font Software is licensed under the SIL Open Font License, Version 1.1:
@@ -16,17 +18,20 @@
     <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
 </head>
 
-<body id="body" class="scroll-snap">
+<body id="body">
     <img id="background-image" src="freepik-orange-background.jpg">
 
-    <nav> 
+    <nav>
+        <a href="index.html" id="about-link" class="link"> belledw </a>
         <i class='bx  bx-menu bx-md' class="menu-icon" onclick="openCloseNav()"> </i> 
     </nav>
 
-    <div id="sidenav" class="sidenav snap-always"> 
+    <div class="snap-always"></div>
+
+    <div id="sidenav" class="sidenav"> 
         <ul id="side-list-fill">
-            <li class="side-list-item"> <a class="link" href="aboutme.html"> about me </a> </li>
-            <li class="side-list-item"> <a class="link" href="index.html#project-section"> projects </a> </li>
+            <li class="side-list-item"> <a class="link" href="index.html#about"> about me </a> </li>
+            <li class="side-list-item"> <a class="link" href="index.html#projects"> projects </a> </li>
             <li class="side-list-item"> <a class="link" href="skills.html"> skills </a> </li>
             <li class="side-list-item"> <a class="link" href="extra.html"> extra  </a> </li>
         </ul>
@@ -47,28 +52,50 @@
 
     </main>
 
-    <footer> 
-        <div style="position:sticky; top:0; padding-top: 25px; padding-bottom: 30px; width: 75%; margin-left: 10px;"> 
+        <div style="position:sticky; top:0; padding-top: 25px; width: 75%; margin-left: 10px;" id="about"> 
             <div style="width:50%"> 
                 <div id="social-links">
                     <div style="width:35%; min-width:120px;">
-                        <a class="link" href="#" style="color: rgba(255, 255, 255, 0.8)" title="not available yet"> linkedin </a>
+                        <a class="link" href="#" title="not available yet"> linkedin </a>
                     </div>
                     <div style="width:35%">
-                        <a class="link" href="https://github.com/belledw" style="color: rgba(255, 255, 255, 0.8)"> github </a>
+                        <a class="link" href="https://github.com/belledw"> github </a>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+
+    <h1 class="main-text major-section-title"> ABOUT ME </h1>
 
     <main>
+        <div class="major-section snap-always" style="margin-bottom: 60px; display: flex;">
+            <div id="about-paragraph">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Scroll down to see what I've been working on!
+                </p>
+            </div>
+            <img src="peep-standing-9-cropped.svg" style="margin-left: 6%; margin-bottom: 2%; margin-top: 0.5%;">
+        </div>
+    </main>
 
-        <div id="project-section" class="snap-always" style="background-color:rgba(229, 154, 102, 1); height: 90vh;">
-            <h1 class="main-text" style="padding-top:30px; margin-left:40px; font-size:425%;"> PROJECTS </h1>
+    <h1 class="main-text major-section-title"> PROJECTS </h1>
+    
+    <main>
+
+        <div class="major-section snap-always" id="projects">
             <div style="display:flex; justify-content: center;">
 
-                <div style="display: flex; align-self: center;" onclick="changeSlide(-1)">
+                <div style="display: flex; align-self: center; margin-top: 125px;" onclick="changeSlide(-1)">
                     <svg  xmlns="http://www.w3.org/2000/svg" width="175" height="175" fill="currentColor" viewBox="0 0 24 24" transform="scale(-1,1) " style="padding-bottom: 100px;">
                         <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
                         <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
@@ -77,12 +104,12 @@
 
                 <div class="project-main fade-in" id="on-display" style="display: flex;"> 
 
-                    <div style="background-color: white; width: 45vw; height: 60vh; border-radius: 5%;"> </div>
+                    <div style="width: 45vw; height: 60vh; border-radius: 5%;"> </div>
 
-                    <div style="width: 40%; margin-left: 30px; margin-right: 30px;">
+                    <div class="project-box">
 
-                        <div style="background-color: white; padding: 15px; padding-top: 1px; border-radius: 5%;"> 
-                            <p class="project-title"> (1) EXAMPLE PROJECT </p>
+                        <div style="padding: 15px; padding-top: 1px; border-radius: 5%;"> 
+                            <p class="project-title"> PROJECT 1 </p>
                             <p class="project-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
@@ -96,12 +123,12 @@
 
                 <div class="project-main fade-in"> 
 
-                    <div style="background-color: white; width: 45vw; height: 60vh; border-radius: 5%;"> </div>
+                    <div style="width: 45vw; height: 60vh; border-radius: 5%;"> </div>
 
-                    <div style="width: 40%; margin-left: 30px; margin-right: 30px;">
+                    <div class="project-box">
 
                         <div style="background-color: white; padding: 15px; padding-top: 1px; border-radius: 5%;"> 
-                            <p class="project-title"> (2) EXAMPLE PROJECT </p>
+                            <p class="project-title"> PROJECT 2 </p>
                             <p class="project-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                                 laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -113,12 +140,12 @@
 
                 <div class="project-main fade-in"> 
 
-                    <div style="background-color: white; width: 45vw; height: 60vh; border-radius: 5%;"> </div>
+                    <div style="width: 45vw; height: 60vh; border-radius: 5%;"> </div>
 
-                    <div style="width: 40%; margin-left: 30px; margin-right: 30px;">
+                    <div class="project-box">
 
                         <div style="background-color: white; padding: 15px; padding-top: 1px; border-radius: 5%;"> 
-                            <p class="project-title"> (3) EXAMPLE PROJECT </p>
+                            <p class="project-title"> PROJECT 3 </p>
                             <p class="project-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
@@ -130,7 +157,7 @@
 
                 </div>
 
-                <div style="display: flex; align-self: center;" onclick="changeSlide(1)"> 
+                <div style="display: flex; align-self: center; margin-top: 125px;" onclick="changeSlide(1)"> 
                     <svg width="175" height="175" fill="currentColor" viewBox="0 0 24 24" id="injected-svg" style="padding-bottom: 100px;">
                         <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
                         <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
