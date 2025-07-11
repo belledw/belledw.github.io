@@ -6,13 +6,21 @@ fetch("https://meowfacts.herokuapp.com/")
         catPara.innerHTML = data.data;
     })
 
+let majorSection = document.getElementsByClassName("major-section")
+
 function openCloseNav() {
     if (document.getElementById("sidenav").style.width == "225px") {
         document.getElementById("sidenav").style.width = "0";
         document.getElementById("body").style.marginRight = "0";
+        for (i = 0; i < majorSection.length; i++) {
+            majorSection[i].style.width = "91vw";
+        }
     } else {
         document.getElementById("sidenav").style.width = "225px";
         document.getElementById("body").style.marginRight = "225px";
+        for (i = 0; i < majorSection.length; i++) {
+            majorSection[i].style.width = "80vw";
+        }
     }
 }
 
