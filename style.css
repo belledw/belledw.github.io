@@ -26,6 +26,17 @@ body {
     height: 838px;
 }
 
+#intro-chevron {
+    position: absolute;
+    bottom: 6vh;
+    left: 45.3vw;
+    color: white;
+    font-size: 200%;
+    font-weight: 350;
+    text-align: center;
+    opacity: 0%;
+}
+
 #background-credit {
     position: absolute;
     bottom: 0;

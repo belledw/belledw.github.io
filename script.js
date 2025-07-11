@@ -24,6 +24,14 @@ function openCloseNav() {
     }
 }
 
+function fadeIn() {
+    let chevron = document.getElementById("intro-chevron");
+    chevron.animate([{opacity: 0}, {opacity: "90%"}], {duration: 500});
+    chevron.style.opacity = "90%";
+}
+
+setTimeout(fadeIn, 2750)
+
 // Reference https://www.w3schools.com/howto/howto_js_slideshow.asp 
 let slideIndex = 1;
 function slideshow(n) {
