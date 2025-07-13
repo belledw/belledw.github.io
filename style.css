@@ -81,6 +81,7 @@ main{
 #about-link {
     font-size: 175%;
     margin-right: 15px;
+    opacity: 0
 }
 
 #student-desc {
@@ -98,8 +99,17 @@ main{
     justify-content: flex-start;
     margin-left: 30px;
     font-size: 120%;
-    color: black;
     text-decoration: none;
+}
+
+#linkedin {
+    color: white;
+    opacity: 0.8;
+}
+
+#github {
+    color: white;
+    opacity: 0.8;
 }
 
 .link{
@@ -173,7 +183,7 @@ main{
 }
 
 .major-section-title {
-    margin-top:60px; 
+    margin-top:-45px; 
     margin-left:6.5vw; 
     font-size:470%;
     background-color: rgba(229, 154, 102, 1);

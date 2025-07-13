@@ -49,7 +49,7 @@
         </div>
 
         <div id="intro-chevron">
-            <p style="margin-bottom: 5px;"> scroll </p> 
+            <p style="margin-bottom: 5px;"> <a href="#about" style="color: white; text-decoration: none;"> scroll </a> </p> 
             <img src="Chevron down.svg">
         </div>
 
@@ -61,18 +61,19 @@
             <div style="width:50%"> 
                 <div id="social-links">
                     <div style="width:35%; min-width:120px;">
-                        <a class="link" href="#" title="not available yet"> linkedin </a>
+                        <a class="link" href="#" title="not available yet" id="linkedin"> linkedin </a>
                     </div>
                     <div style="width:35%">
-                        <a class="link" href="https://github.com/belledw"> github </a>
+                        <a class="link" href="https://github.com/belledw" id="github"> github </a>
                     </div>
                 </div>
             </div>
         </div>
+    
+    <main id="about-block" style="opacity: 0;">
 
-    <h1 class="main-text major-section-title"> ABOUT ME </h1>
+        <h1 class="main-text major-section-title" id="about-title"> ABOUT ME </h1>
 
-    <main>
         <div class="major-section snap-always" style="margin-bottom: 60px; display: flex;">
             <div id="about-paragraph">
                 <p>
@@ -92,10 +93,10 @@
             <img src="peep-standing-9.svg" style="margin-left: 6%; margin-bottom: 2%; margin-top: 0.5%;">
         </div>
     </main>
-
-    <h1 class="main-text major-section-title"> PROJECTS </h1>
     
-    <main>
+    <main id="project-block" style="opacity: 0;">
+
+        <h1 class="main-text major-section-title" id="project-heading"> PROJECTS </h1>
 
         <div class="major-section snap-always" id="projects">
             <div style="display:flex; justify-content: center;">
@@ -173,6 +174,48 @@
         </div>
 
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.to('#intro-chevron', {
+                scrollTrigger: '#about-title',
+                display: 'none'
+            });
+            gsap.to('#about-link', {
+                scrollTrigger: {trigger: '#about-title', scrub: true},
+                opacity: 1
+            })
+            gsap.to('#linkedin', {
+                scrollTrigger: {trigger: '#about-title', scrub: true},
+                color: 'black'
+            });
+            gsap.to('#github', {
+                scrollTrigger: {trigger: '#about-title', scrub: true},
+                color: 'black'
+            });
+            gsap.to('#about-block', {
+                scrollTrigger: {trigger: '#about-block', toggleActions: "play reverse reverse reverse"},
+                opacity: 1,
+                duration: 0.5
+            });
+            gsap.to('#project-block', {
+                scrollTrigger: {trigger: '#project-block', toggleActions: "play reverse reverse reverse"},
+                opacity: 1,
+                duration: 0.5,
+                delay: 0.1
+            });
+            gsap.to('#on-display', {
+                scrollTrigger: '#on-display',
+                opacity: 1,
+                duration: 1
+            })
+        });
+    </script>
 
 </body>
 
