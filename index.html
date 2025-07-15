@@ -22,7 +22,7 @@
     <img id="background-image" src="freepik-orange-background.jpg">
 
     <nav>
-        <a href="index.html" id="about-link" class="link"> belledw </a>
+        <a href="index.html#" id="about-link" class="link" style="opacity: 0"> belledw </a>
         <i class='bx  bx-menu bx-md' class="menu-icon" onclick="openCloseNav()"> </i> 
     </nav>
 
@@ -57,7 +57,7 @@
 
     </main>
 
-        <div style="position:sticky; top:0; padding-top: 25px; width: 75%; margin-left: 10px;" id="about"> 
+        <div style="position:sticky; top:0; padding-top: 25px; width: 75%; margin-left: 10px;"> 
             <div style="width:50%"> 
                 <div id="social-links">
                     <div style="width:35%; min-width:120px;">
@@ -69,6 +69,8 @@
                 </div>
             </div>
         </div>
+    
+        <div id="about"> </div>
     
     <main id="about-block" style="opacity: 0;">
 
@@ -201,12 +203,12 @@
             gsap.to('#about-block', {
                 scrollTrigger: {trigger: '#about-block', toggleActions: "play reverse reverse reverse"},
                 opacity: 1,
-                duration: 0.5
+                duration: 0.3
             });
             gsap.to('#project-block', {
                 scrollTrigger: {trigger: '#project-block', toggleActions: "play reverse reverse reverse"},
                 opacity: 1,
-                duration: 0.5,
+                duration: 0.3,
                 delay: 0.1
             });
             gsap.to('#on-display', {

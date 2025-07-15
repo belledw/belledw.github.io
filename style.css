@@ -81,7 +81,6 @@ main{
 #about-link {
     font-size: 175%;
     margin-right: 15px;
-    opacity: 0
 }
 
 #student-desc {
@@ -249,6 +248,29 @@ main{
     padding-left: 40px;
     padding-bottom: 0px;
     margin-right: 65px;
+}
+
+#skills-header {
+    background-color: rgba(229, 154, 102, 1);
+    padding: 10px;
+    max-width: 410px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 110px;
+    top: 40px;
+    font-size: 500%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#skills-about {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    font-weight: 250;
+    font-size: 125%;
+    line-height: 155%;
+    padding: 50px;
+    padding-top: 75px;
 }
 
 .fade-in {
