@@ -262,15 +262,16 @@ main{
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-#skills-about {
+.skills-about {
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     font-weight: 250;
     font-size: 125%;
     line-height: 155%;
-    padding: 50px;
-    padding-top: 75px;
+    padding-right: 0px;
+    padding-left: 150px;
+    margin-top: -130px;
 }
 
 .fade-in {
