@@ -199,10 +199,6 @@
     <script>
         document.addEventListener("DOMContentLoaded", (event) => {
             gsap.registerPlugin(ScrollTrigger);
-            gsap.to('#intro-chevron', {
-                scrollTrigger: '#about-title',
-                display: 'none'
-            });
             gsap.to('#about-link', {
                 scrollTrigger: {trigger: '#about-title', scrub: true},
                 opacity: 1
